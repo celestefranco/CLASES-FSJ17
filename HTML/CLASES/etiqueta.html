@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETIQUETAS</title>
+</head>
+<body>
+    <!--
+        <b>: Solo proporciona estilo a los valores en negrita
+        <i>: Formatea el texto en cursiva
+        <strong> Etiqueta que sirve para mostrar algo relevante de un texto
+        <em>: Formatea el texto en cursiva cuando se quiere mostrar mas relevancia al texto
+    -->
+    <p>
+        <b>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum ullam optio quos earum! Magni beatae consequuntur, quis perferendis dolore quod dolorem iste eaque dolorum error quae reprehenderit, mollitia provident? Rem!</b>
+    </p>
+    <p>
+        <strong>Hola Chicos!</strong> Bienvenidos a un nuevo curso de HTML.
+        <em>Bootcamp FSJ17</em>
+    </p>
+    <p>
+        <i>Estamos en el Bootcamp FSJ17</i>
+    </p>
+   <h2>Trabajando con listas</h2>
+   <!--
+    Datalist: Genera una lista con multiples opciones
+   -->
+   <input list="cursos">
+   <datalist id="cursos">
+        <option value="HTML"></option>
+        <option value="CSS"></option>
+        <option value="Javascript"></option>
+        <option value="React"></option>
+   </datalist>
+   <h2>Trabajando con detalles</h2>
+   <!--
+        details: Especifica detalles adicionales de un contenido
+        sumary: Especifica el titulo de los detalles
+   -->
+   <details>
+        <summary>HTML</summary>
+        <p>Es un curso que te va a servir para estructurar Paginas Web</p>
+        <details>
+            <summary> Etiquetas</summary>
+            <p>Conoceras las etiquetas basicas</p>
+        </details>
+   </details>
+   <!--
+        <figure>: Se utiliza como contenedor donde podemos colocar imagenes, archivos,documentos, videos, codigo
+        figcaption: Se utiliza para asignar el titulo de figure
+   -->
+   <figure>
+        <img src="./RUTAFLORES.jpg" alt="rutaflores">
+        <figcaption>Ruta de las Flores</figcaption>
+   </figure>
+</body>
+</html>

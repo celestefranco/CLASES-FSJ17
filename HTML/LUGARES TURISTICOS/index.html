@@ -1,0 +1,98 @@
+<!-- Estructura basica de html:head, body-->
+<!DOCTYPE html> <!--tipo de documento-->
+<html lang="en"><!--espefica el lenguaje de la pagina-->
+<head>
+    <meta charset="UTF-8"><!--pagina va aceptar de todo tipo de caracteres-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--pagina compatible con los navegadores-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--espefica los tamaños de los dispositivos-->
+    <title>Lugares Turisticos</title><!--titulo del documento-->
+</head>
+<body>
+    <!--contenido que va a visualizar el usuario, estructura del cuerpo, header, nav, section, asside y footer-->
+    <!--creando el encabezado-->
+    <header>
+        <h1>Lugares Turisticos de El Salvador</h1>
+    </header>
+    <!--menu de navegacion-->
+    <nav>
+        <!--lista desordenada-->
+        <ul>
+            <!--elementos de la lista-->
+            <li>
+                <!--hipervinculos, para redireccionar a otras paginas
+                Se tienen dos tipos de rutas con los hipervinculos
+                -rutas relativas: Especifican las rutas de archivos que estan ubicadas en el sevidor
+                -rutas absolutas: Especifican las rutas de enlaces, url que estan alojadas en servidores externos-->
+                <a href="./index.html">Home</a>
+            </li>
+            <li>
+                <a href="./elpital.html">El Pital</a>
+            </li>
+            <li>
+                <a href="./rutaflores.html">Ruta de las Flores</a>
+            </li>
+            <li>
+                <a href="./lagocoatepeque.html">Lago de Coatepeque</a>
+            </li>
+        </ul>
+    </nav>
+    <!--contenido principal de la pagina:
+        <section>,<main>,<div>,<article>
+            <main>: Etiqueta Padre para nuestro contenido
+            <article>: Etiqueta para dividir nuestro contenido
+    -->
+    <main>
+        <section>
+            <article>
+                <h2>Bienvenidos a nuestra pagina web!</h2>
+            </article>
+            <article>
+                <!-- describiendo de que se trata la pagina web
+                    <p>: indica parrafos
+                -->
+                <p>
+                    En este sitio web encontraras los lugares turisticos mas visitados de El Salvador!
+                    podras visualizar, imagenes, detalles y direccion de dichos lugares...
+                </p>
+            </article>
+        </section>
+        <section>
+            <!--imagen
+                src: propiedad donde colocamos la ruta de la imagen
+                alt= propiedad que describe de que se trata la imagen
+            -->
+            <img src="./img/lugaresturisticoselsalvador.jpg" alt="lugaresturisticoselsalvador">
+        </section>
+        <!--apartado que no es tan relevante para la pagina web
+            <span> La etiqueta span hace relevancia a lo que tenemos en otra etiqueta
+                -->
+        <aside>
+            <h4>Dale Click <span>
+            <a href="">Aqui!</a>
+            </span></h4>
+            <!-- asignado una ruta absoluta
+                target: es una propiedad que toma como relevancia la redireccion de la ruta
+                blank: redirigir la ruta en una nueva pestaña
+            -->
+            <a href="https://htmlreference.io/" target="_blank">Dale Click Aqui</a>
+        </aside>
+        <section>
+            <h3>Ponte en Contacto con Nosotros, Escrìbenos</h3>
+            <form  action="" method="POST" enctype="multipart/form-data">
+                <input type="hidden" name="action" value="submit">
+                Nombre Completo:<br>
+                <input name="name" type="text" value="" size="30"/><br>
+                email:<br>
+                <input name="email" type="text" value="" size="30"/><br>
+                Mensaje:<br>
+                <textarea name="message" rows="7" cols="30"></textarea><br>
+                <input type="submit" value="Enviar"/>
+            </form>
+        </section>
+    </main>
+    <!--pie de pagina-->
+    <footer>
+        <h1>2023 Celeste Franco</h1>
+    </footer>
+</body>
+</html>

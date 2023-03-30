@@ -1,0 +1,210 @@
+/**importando la fuente */
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+/** selector universal para el reseteo de la pagina(*) */
+*{
+    /** con el universal solo podemos tener: margin y padding */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/** validamos que las cajas hijas este solo en la caja padre */
+}
+body{
+    /** asignando tipo de fuente */
+    font-family: 'Alkatra', cursive;
+}
+header{
+    /** propiedad para colocar imagen de fondo */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='250' preserveAspectRatio='none' viewBox='0 0 1440 250'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1227%26quot%3b)' fill='none'%3e%3crect width='1440' height='250' x='0' y='0' fill='url(%23SvgjsLinearGradient1228)'%3e%3c/rect%3e%3cpath d='M4 250L254 0L600.5 0L350.5 250z' fill='url(%23SvgjsLinearGradient1229)'%3e%3c/path%3e%3cpath d='M264.6 250L514.6 0L553.6 0L303.6 250z' fill='url(%23SvgjsLinearGradient1229)'%3e%3c/path%3e%3cpath d='M511.20000000000005 250L761.2 0L867.7 0L617.7 250z' fill='url(%23SvgjsLinearGradient1229)'%3e%3c/path%3e%3cpath d='M749.8000000000001 250L999.8000000000001 0L1052.3000000000002 0L802.3000000000001 250z' fill='url(%23SvgjsLinearGradient1229)'%3e%3c/path%3e%3cpath d='M1419 250L1169 0L893 0L1143 250z' fill='url(%23SvgjsLinearGradient1230)'%3e%3c/path%3e%3cpath d='M1170.4 250L920.4000000000001 0L749.4000000000001 0L999.4000000000001 250z' fill='url(%23SvgjsLinearGradient1230)'%3e%3c/path%3e%3cpath d='M951.8 250L701.8 0L382.29999999999995 0L632.3 250z' fill='url(%23SvgjsLinearGradient1230)'%3e%3c/path%3e%3cpath d='M688.1999999999999 250L438.19999999999993 0L252.19999999999993 0L502.19999999999993 250z' fill='url(%23SvgjsLinearGradient1230)'%3e%3c/path%3e%3cpath d='M1225.6930484905602 250L1440 35.693048490560045L1440 250z' fill='url(%23SvgjsLinearGradient1229)'%3e%3c/path%3e%3cpath d='M0 250L214.30695150943995 250L 0 35.693048490560045z' fill='url(%23SvgjsLinearGradient1230)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1227'%3e%3crect width='1440' height='250' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='20.66%25' y1='-119%25' x2='79.34%25' y2='219%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1228'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(0%2c 48%2c 110%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='0%25' y1='100%25' x2='100%25' y2='0%25' id='SvgjsLinearGradient1229'%3e%3cstop stop-color='rgba(15%2c 70%2c 185%2c 0.2)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(15%2c 70%2c 185%2c 0.2)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='100%25' y1='100%25' x2='0%25' y2='0%25' id='SvgjsLinearGradient1230'%3e%3cstop stop-color='rgba(15%2c 70%2c 185%2c 0.2)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(15%2c 70%2c 185%2c 0.2)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+    /** asignando alto a la caja */
+    height: 200px;
+    color: white;
+    /** alineando el texto al centro */
+    text-align: center;
+    line-height: 200px; /**propiedad que toma el espacio de alto para que el texto quede al centro */
+
+}
+nav{
+    background-color: #152861;
+    text-align: center;    
+}
+nav ul li{
+    display: inline-block;
+    list-style: none; /** no va a tener ningun estilo de lista */
+    margin: 10px;    
+}
+nav ul li a{
+    color: white;
+    text-decoration: none; /** no va a tener ninguna decoracion */
+}
+/** agregando estilos al contenido principal*/
+.box-center{
+    width: 80%;/** define el ancho del contenedor padre */
+    margin: auto;/** se toma el margen automatico que provee el navegador */
+    padding: 25px;
+}
+.titulo{
+    text-align: center;
+    /** 1rem => 16 px */
+    font-size: 2rem; /** asignando tamaño a la fuente */
+    color: #1428A2;
+}
+.box-section{
+    display: flex;/** indicamos que el contenedor va a ser flexible */
+    justify-content: space-around;
+}
+#imagen{
+    width: 60%;
+}
+footer{
+    background-color: #152861;
+}
+/** 
+Display: asigna como va a trabajar un elemento 
+-inline-block: elementos que se ponene en bloqueo y en linea
+-flex: los elementos se asignan de forma flexible
+-grid: los elementos estaran asociados en columnas y firlas
+ */
+.footer_container{
+    display: grid;
+    /** asignamos cuantas columnas queremos */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 50px 0;/**50 px arriba y abajo, 0 pixeles derecha e izquierda */
+    gap: 20px; /** es un espacio que le asignamos dentro de las columnas */
+    color: white;
+}
+/** diseñanado el apartado de los iconos*/
+.margen{
+    margin: 30px 0;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+    /** estamos trabajando con los elementos si van a estar en fila y si los estamos envolviendo en una sola linea */
+}
+.icons a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #509F36;
+    border-radius: 50%;
+    color: white;
+    margin: 5px;
+}
+.footer_container .info .icons{
+    width: 60%;    
+}
+.footer_container .info .icons a{
+    width: 50px;
+    height: 50px;
+}
+/** Pseudoclase: hover: */
+.footer_container .info .icons a:hover{
+    background: transparent;
+}
+
+/** Apartado de viajes.html */
+.seccion-card{
+    display: flex;/** indicamos que los elementos van a ser flexibles */
+    justify-content: space-around;
+    flex-flow: row wrap;/** envuelve los elementos en una fila */
+}
+.card{
+    width: 30%;
+    height: 180px;
+    /** colocando sombra al contenedor */
+    box-shadow: 0 0 10px 5px rgba(0,0, 0, 0.5) ; /** x (horizontal),y (vertical), blur-radius (opacidad o desenfoque de la sombra), spread-radius (propagacion de la sombra ), color */
+    margin-bottom: 30px;
+    background-size: cover; /** indicamos que lo haya dentro de la caja se va adaptar al tamaño de la tarjeta */
+    background-position: center; /** indicamos el posicionamiento de los elementos de la tarjeta */
+}
+.seccion-card img{
+    /**  */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /** solo se utiliza para imagenes o videos que se adapten el tamaño del contenedor */
+    transition: all .5s;
+}
+.card:hover{
+    transform: scale(1.1); /** x=1.1, y=1.1 */
+} 
+
+/** apartado de contacto.html */
+.contacto-fondo {
+    background-image: url(../img/viaje4.jpg);
+    height: 30rem; /** 1rem=16px */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -100px;
+}
+.formulario{
+    background-color: rgba(192, 192, 192, 0.3);
+    margin: -10rem auto 0 auto;/** -10=top, auto=right, 0=bottom, auto=left */
+    width: 90%;
+    padding: 3rem;
+}
+form label{
+    font-weight: bold;/** peso de la letra */
+}
+/** selector por atributo */
+input[type="text"],
+input[type="email"]{
+    width: 100%;
+    height: 30px;
+    padding: 3px 10px;/**top-bottom-right-keft */
+    border: 1px solid #f6f6f6;
+    border-radius: 3px;
+    margin: 8px 0;
+    display: block; /** los elementos se aplican uno abajo del otro */
+}
+textarea{
+    width: 100%;
+    height: 100px;
+    border: 1px solid #f6f6f6;
+    border-radius: 3px;
+    margin: 8px 0;
+    display: block; /** los elementos se aplican uno abajo del otro */
+}
+input[type="submit"]{
+    width: 100%;
+    padding: 8px;
+    margin-top: 32px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+}
+input[type="submit"]:hover{
+    background-color: #509F36;  
+    border: 1px #509F36; 
+}
+
+/** aplicando media query */
+@media (max-width: 1100px){
+    .icons{
+        width: 100% !important; /** con el !important asignamos que esto va ser mas importante */
+    }
+}
+
+/** aplicando estilos para pantallas pequeñas */
+@media (max-width: 550px){
+    .box-section{
+        display: inline-block;
+        text-align: center;
+    }
+
+    .footer_container{
+        /** asignamos una sola columna */
+        grid-template-columns: 1fr;
+    }
+
+    /** apartado de viajes.html */
+    .card{
+        width: 100%;
+    }
+    .contacto-fondo{
+        background-size: none;
+        background-position: 25% -100px;
+    }
+}

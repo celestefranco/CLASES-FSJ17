@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+</head>
+<body>
+    <h1>Registro de Usuarios</h1>
+    <!--
+        dentro de la etiqueta form tenemos 2 propiedades: action, method
+        action: redirecciona adonde queremos enviar la informacion
+        method: peticiones para la informacion del formulario POST (Hace envio de datos)
+        PUT (actualiza datos), DELETE (elimina datos), GET(Obtener informacion)
+    -->
+        <form action="" method="">
+            <!--
+                label: solo puedo trabajar dentro de un form, sirve para asignar un mensaje, una indicacion
+                input: se puede trabajar fuera del form
+                 type= text, radio, checkbox, date, time, password, email, file, button, submit, datetime-local, reset, imagen
+                    type radio: se selecciona una unica opcion
+                    type checkbix: se pueden seleccionar varias opciones
+                 ol, ul
+                button
+                select
+            -->
+            <label for="">ingresa tu nombre</label>
+            <input type="text" placeholder="Ingresa tu nombre completo">
+            <br>
+            <label for="">telefono</label>
+            <input type="number" placeholder="Ingresa tu numero de telefono">
+            <br>
+            <label for="">edad</label>
+            <input type="number" placeholder="Ingresa tu edad">
+            <br>
+            <!-- asigando lista ordenada-->
+            <label for="">Selecciona tus hobbies</label>
+            <ol>
+                <li><input type="checkbox">Ver Anime</li>
+                <li><input type="checkbox">Leer Libros</li>
+                <li><input type="checkbox">Jugar Futbol</li>
+                <li><input type="checkbox">Cocinar</li>
+                <li><input type="checkbox">Programar</li>
+            </ol>
+            <br>
+            <label for="">Selecciona Genero</label>
+            <input type="radio" name="genero">M
+            <input type="radio" name="genero">F
+            <br>
+            <label for="">¿En que area trabaja?</label>
+            <select name="" id="">
+                <option value="Educacion">Educacion</option>
+                <option value="Medicina">Medicina</option>
+                <option value="informatica">Informatica</option>
+                <option value="Deporte">Deporte</option>
+            </select>
+            <br>
+            <label for="text">Usuario</label>
+            <input type="text" placeholder="Ingrese su usuario">
+            <br>
+            <label for="">Contraseña</label>
+            <input type="password" placeholder="Ingrese su contraseña">
+            <br>
+            <label for="">Fecha de nacimiento</label>
+            <input type="date">
+            <br>
+            <label for="">Foto de perfil</label>
+            <input type="file">
+            <br>
+            <!-- Tipos de botones-->
+            <button>Agregar Usuario</button>  <!-- no genera ningun tipo de accion hasta que nosotros le indiquemos-->
+            <input type="reset"> <!-- genera la accion de reestablece los valores a como estaban al principio-->
+            <input type="submit"> <!-- hace referencia al apartado del action-->
+        </form>
+</body>
+</html>
