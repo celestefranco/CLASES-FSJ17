@@ -1,0 +1,14 @@
+.box-img{
+    object-fit: cover;
+    height: 250px;
+}
+.img-carousel{
+    width: 150px;
+    height: 150px;
+}
+.img-carousel img{
+    object-fit: cover;
+}
+.parrafomodal{
+    text-align: center;
+}

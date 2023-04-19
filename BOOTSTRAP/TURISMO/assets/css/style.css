@@ -1,0 +1,13 @@
+#banner{
+    background-image: url(../TURISMO/assets/img/shutterstock_116403520.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -100px;
+}
+@media (max-width:570px){
+    #banner{
+        height: 250px;
+        background-position: center;
+    }
+}
