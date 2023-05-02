@@ -1,11 +1,35 @@
 #banner{
-    background-image: url(../TURISMO/assets/img/shutterstock_116403520.jpg);
     height: 400px;
+    background-image: url('../img/shutterstock_116403520.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center -100px;
 }
-@media (max-width:570px){
+/** Apartado de las recuadros*/
+.img-turismo{
+    width: 100px;
+    object-fit: contain;
+}
+.img-jovenes{
+    width: 250px;
+    
+}
+.title{
+    font-size:smaller;
+    text-align: justify;
+}
+/** Apartado del footer*/
+.bg-colors{
+    background-color: rgb(44, 43, 43);
+    color: white;
+}
+.img-logis{
+    width: 135px;
+}
+.info{
+    font-size: smaller;
+}
+@media (max-width: 570px){
     #banner{
         height: 250px;
         background-position: center;
